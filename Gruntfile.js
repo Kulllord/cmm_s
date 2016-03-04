@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 		cssnano: {
 			options: {
 				autoprefixer: false,
-				safe: true,
+				safe: true
 			},
 			dist: {
 				files: {
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: ['/js/concat/*.js'],
-				dest: '/js/project.js',
+				dest: '/js/project.js'
 			}
 		},
 
@@ -124,8 +124,8 @@ module.exports = function(grunt) {
 				tasks: ['styles'],
 				options: {
 					spawn: false,
-					livereload: true,
-				},
+					livereload: true
+				}
 			}
 		},
 
@@ -158,9 +158,9 @@ module.exports = function(grunt) {
 				max_jshint_notifications: 5,
 				title: "wd_s",
 				success: false,
-				duration: 2,
+				duration: 2
 			}
-		},
+		}
 	});
 
 	// Register Grunt tasks.
