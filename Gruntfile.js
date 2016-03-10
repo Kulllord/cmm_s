@@ -25,8 +25,10 @@ module.exports = function(grunt) {
 		 */
 		sass: {
 			options: {
+				includePaths: ['node_modules/bootstrap-sass/assets/stylesheets'],
 				outputStyle: 'expanded',
 				indentType: 'tab',
+				indentWidth: 1,
 				precision: 8,
 				sourceComments: true,
 				sourceMap: true
