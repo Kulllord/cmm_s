@@ -1,7 +1,7 @@
 {
 	"name": "codemastermind-theme",
 	"description": "My Custom Theme",
-	"keywords": "",
+	"keywords": [""],
 	"author": "Christopher Parker",
 	"version": "0.1.0",
 	"repository": {
@@ -10,6 +10,7 @@
 	},
 	"dependencies": {
 		"autoprefixer": "^6.3.2",
+		"bootstrap-sass": "^3.3.6",
 		"css-mqpacker": "^4.0.0",
 		"glob": "^7.0.0",
 		"grunt": "^0.4.5",
