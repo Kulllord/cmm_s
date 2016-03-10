@@ -26,6 +26,7 @@ module.exports = function(grunt) {
 		sass: {
 			options: {
 				outputStyle: 'expanded',
+				indentType: 'tab',
 				precision: 8,
 				sourceComments: true,
 				sourceMap: true
@@ -46,7 +47,17 @@ module.exports = function(grunt) {
 			options: {
 				map: true,
 				processors: [
-					require('autoprefixer')({ browsers: 'last 2 versions' }),
+					// require('autoprefixer')({ browsers: 'last 2 versions' }),
+					require('autoprefixer')({ browsers: [
+						'Android 2.3',
+						'Android >= 4',
+						'Chrome >= 20',
+						'Firefox >= 24',
+						'Explorer >= 8',
+						'iOS >= 6',
+						'Opera >= 12',
+						'Safari >= 6'
+					] }),
 					require('css-mqpacker')({ sort: true })
 				]
 			},
@@ -142,7 +153,7 @@ module.exports = function(grunt) {
 				]
 			},
 			options: {
-				bin: '~/phpcs/scripts/phpcs',
+				//bin: '~/phpcs/scripts/phpcs',
 				standard: 'WordPress'
 			}
 		},
@@ -156,7 +167,7 @@ module.exports = function(grunt) {
 			options: {
 				enabled: true,
 				max_jshint_notifications: 5,
-				title: "wd_s",
+				title: "cmmt",
 				success: false,
 				duration: 2
 			}
