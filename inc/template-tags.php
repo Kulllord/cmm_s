@@ -118,4 +118,4 @@ function cmmt_category_transient_flusher() {
 	delete_transient( 'cmmt_categories' );
 }
 add_action( 'edit_category', 'cmmt_category_transient_flusher' );
-add_action( 'save_post',     'cmmt_category_transient_flusher' );
+add_action( 'save_post', 'cmmt_category_transient_flusher' );

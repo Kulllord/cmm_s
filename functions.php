@@ -99,7 +99,7 @@ add_action( 'after_setup_theme', 'cmmt_content_width', 0 );
  */
 function cmmt_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'cmmt' ),
+		'name' => esc_html__( 'Sidebar', 'cmmt' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -113,7 +113,7 @@ add_action( 'widgets_init', 'cmmt_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function cmmt_scripts() {
+/*function cmmt_scripts() {
 	wp_enqueue_style( 'cmmt-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'cmmt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -124,7 +124,7 @@ function cmmt_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'cmmt_scripts' );
+add_action( 'wp_enqueue_scripts', 'cmmt_scripts' );*/
 
 /**
  * Implement the Custom Header feature.
@@ -150,3 +150,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load styles and scripts.
+ */
+require get_template_directory() . '/inc/scripts.php';
