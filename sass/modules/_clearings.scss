@@ -1,3 +1,4 @@
+/* for use without bootstrap.
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -20,4 +21,12 @@
 .site-content:after,
 .site-footer:after {
 	@include clearfix-after;
+}*/
+.clear,
+.entry-content,
+.comment-content,
+.site-header,
+.site-content,
+.site-footer {
+	@include clearfix;
 }
