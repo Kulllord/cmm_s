@@ -92,10 +92,36 @@ module.exports = function(grunt) {
 		 */
 		concat: {
 			dist: {
-				src: ['/js/concat/*.js'],
-				dest: '/js/project.js'
+				files: [
+					{src: ['js/concat/*.js'], dest: 'js/project.js'},
+					// the following source builds bootstrap.js.
+					// use only the modules you need (which is none by default).
+					// any module requires the base.js to be included.
+					{src: [
+						'js/bootstrap/base.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js'
+					],
+					dest: 'js/bootstrap.js'}
+				]
 			}
 		},
+		/*concat: {
+			dist: {
+				src: ['js/concat/*.js'],
+				dest: 'js/project.js'
+			}
+		},*/
 
 		/**
 		 * Minify files with UglifyJS.
@@ -111,8 +137,8 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'js/',
-					src: ['**/*.js', '!**/*.min.js', '!concat/*.js', '!customizer.js'],
-					dest: 'assets/js/',
+					src: ['**/*.js', '!**/*.min.js', '!concat/*.js', '!bootstrap/*.js', '!customizer.js'],
+					dest: 'js/',
 					ext: '.min.js'
 				}]
 			}
