@@ -23,7 +23,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
 # Typography
 # Elements
 # Forms
@@ -43,15 +42,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "variables/index";
-@import "mixins/index";
+@import "utilities/variables/index";
+@import "utilities/mixins/index";
 
 @import 'bootstrap-custom';
-
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-// @import "normalize";
 
 /*--------------------------------------------------------------
 # Typography
