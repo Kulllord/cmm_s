@@ -391,139 +391,134 @@ $icon-font-path: "fonts/bootstrap/";
 // $hr-border:                   $gray-lighter;
 
 
-/*
-variables used
-============================
-$bootstrap-sass-asset-helper
-$icon-font-path
-$icon-font-name
-$icon-font-svg-id
-$font-family-base
-$font-family-sans-serif
-$font-size-base
-$line-height-base
-$text-color
-$gray-dark
-$body-bg
-$link-color
-$brand-primary
-$link-hover-color
-$link-hover-decoration
-$border-radius-large
-$thumbnail-padding
-$thumbnail-bg
-$thumbnail-border
-$thumbnail-border-radius
-$border-radius-base
-$line-height-computed
-$hr-border
-$gray-lighter
-$headings-font-family
-$headings-font-weight
-$headings-line-height
-$headings-color
-$headings-small-color
-$font-size-h1
-$font-size-h2
-$font-size-h3
-$font-size-h4
-$font-size-h5
-$font-size-h6
-$screen-sm-min
-$font-size-small
-$state-warning-bg
-$text-muted
-$gray-light
-$state-success-text
-$state-info-text
-$state-warning-text
-$state-danger-text
-$state-success-bg
-$state-info-bg
-$state-danger-bg
-$page-header-border-color
-$dl-horizontal-breakpoint
-$grid-float-breakpoint
-$dl-horizontal-offset
-$component-offset-horizontal
-$abbr-border-color
-$blockquote-font-size
-$blockquote-border-color
-$blockquote-small-color
-$font-family-monospace
-$code-color
-$code-bg
-$kbd-color
-$kbd-bg
-$border-radius-small
-$pre-color
-$pre-bg
-$pre-border-color
-$pre-scrollable-max-height
-$container-sm
-$container-tablet
-$screen-md-min
-$screen-md
-$container-md
-$container-desktop
-$grid-gutter-width
-$screen-lg-min
-$screen-lg
-$container-lg
-$container-lg-desktop
-$table-bg
-$table-cell-padding
-$table-border-color
-$table-condensed-cell-padding
-$screen-xs-max
-$screen-sm-min
-$legend-color
-$legend-border-color
-$padding-base-vertical
-$input-color
-$input-height-base
-$padding-base-horizontal
-$input-bg
-$input-border
-$cursor-disabled
-$input-height-small
-$line-height-small
-$padding-small-vertical
-$input-height-large
-$font-size-large
-$line-height-large
-$padding-large-vertical
-$form-group-margin-bottom
-$padding-small-horizontal
-$padding-large-horizontal
-$btn-font-weight
-$btn-border-radius-base
-$btn-default-color
-$btn-default-bg
-$btn-default-border
-$btn-primary-color
-$btn-primary-bg
-$btn-primary-border
-$btn-success-color
-$btn-success-bg
-$btn-success-border
-$btn-info-color
-$btn-info-bg
-$btn-info-border
-$btn-warning-color
-$btn-warning-bg
-$btn-warning-border
-$btn-danger-color
-$btn-danger-bg
-$btn-danger-border
-$btn-link-disabled-color
-$btn-border-radius-large
-$btn-border-radius-small
-$padding-xs-vertical
-$padding-xs-horizontal
-$screen-sm-max
-$screen-md-min
-*/
-/*
-Used Mixins
-*/
+// variables used
+// ============================
+// $bootstrap-sass-asset-helper
+// $icon-font-path
+// $icon-font-name
+// $icon-font-svg-id
+// $font-family-base
+// $font-family-sans-serif
+// $font-size-base
+// $line-height-base
+// $text-color
+// $gray-dark
+// $body-bg
+// $link-color
+// $brand-primary
+// $link-hover-color
+// $link-hover-decoration
+// $border-radius-large
+// $thumbnail-padding
+// $thumbnail-bg
+// $thumbnail-border
+// $thumbnail-border-radius
+// $border-radius-base
+// $line-height-computed
+// $hr-border
+// $gray-lighter
+// $headings-font-family
+// $headings-font-weight
+// $headings-line-height
+// $headings-color
+// $headings-small-color
+// $font-size-h1
+// $font-size-h2
+// $font-size-h3
+// $font-size-h4
+// $font-size-h5
+// $font-size-h6
+// $screen-sm-min
+// $font-size-small
+// $state-warning-bg
+// $text-muted
+// $gray-light
+// $state-success-text
+// $state-info-text
+// $state-warning-text
+// $state-danger-text
+// $state-success-bg
+// $state-info-bg
+// $state-danger-bg
+// $page-header-border-color
+// $dl-horizontal-breakpoint
+// $grid-float-breakpoint
+// $dl-horizontal-offset
+// $component-offset-horizontal
+// $abbr-border-color
+// $blockquote-font-size
+// $blockquote-border-color
+// $blockquote-small-color
+// $font-family-monospace
+// $code-color
+// $code-bg
+// $kbd-color
+// $kbd-bg
+// $border-radius-small
+// $pre-color
+// $pre-bg
+// $pre-border-color
+// $pre-scrollable-max-height
+// $container-sm
+// $container-tablet
+// $screen-md-min
+// $screen-md
+// $container-md
+// $container-desktop
+// $grid-gutter-width
+// $screen-lg-min
+// $screen-lg
+// $container-lg
+// $container-lg-desktop
+// $table-bg
+// $table-cell-padding
+// $table-border-color
+// $table-condensed-cell-padding
+// $screen-xs-max
+// $screen-sm-min
+// $legend-color
+// $legend-border-color
+// $padding-base-vertical
+// $input-color
+// $input-height-base
+// $padding-base-horizontal
+// $input-bg
+// $input-border
+// $cursor-disabled
+// $input-height-small
+// $line-height-small
+// $padding-small-vertical
+// $input-height-large
+// $font-size-large
+// $line-height-large
+// $padding-large-vertical
+// $form-group-margin-bottom
+// $padding-small-horizontal
+// $padding-large-horizontal
+// $btn-font-weight
+// $btn-border-radius-base
+// $btn-default-color
+// $btn-default-bg
+// $btn-default-border
+// $btn-primary-color
+// $btn-primary-bg
+// $btn-primary-border
+// $btn-success-color
+// $btn-success-bg
+// $btn-success-border
+// $btn-info-color
+// $btn-info-bg
+// $btn-info-border
+// $btn-warning-color
+// $btn-warning-bg
+// $btn-warning-border
+// $btn-danger-color
+// $btn-danger-bg
+// $btn-danger-border
+// $btn-link-disabled-color
+// $btn-border-radius-large
+// $btn-border-radius-small
+// $padding-xs-vertical
+// $padding-xs-horizontal
+// $screen-sm-max
+// $screen-md-min
