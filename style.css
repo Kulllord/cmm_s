@@ -15,32 +15,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 CodeMastermind Theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
 # Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
 # Accessibility
 # Alignments
 # Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
+# Elements
 # Media
 	## Captions
 	## Galleries
+# Infinite scroll
+# Header
+# Navigation
+	## Links
+	## Menus
+# Content
+	## Posts and pages
+	## Asides
+# Forms
+# Comments
+# Footer
+# Widgets
 --------------------------------------------------------------*/
 /*
 variables used
@@ -4195,423 +4193,21 @@ input[type="button"].btn-block {
 	display: none !important;
 }
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
+/*! END Bootstrap START Theme code */
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_typography.scss */
-body,
-button,
-input,
-select,
-textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-}
-
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_headings.scss */
-h1, h2, h3, h4, h5, h6 {
+/* line 7, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_typography.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	clear: both;
-}
-
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-p {
-	margin-bottom: 1.5em;
-}
-
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-dfn, cite, em, i {
-	font-style: italic;
-}
-
-/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-blockquote {
-	margin: 0 1.5em;
-}
-
-/* line 13, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-address {
-	margin: 0 0 1.5em;
-}
-
-/* line 17, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 14px;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-/* line 28, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 14px;
-}
-
-/* line 33, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-/* line 38, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-/* line 43, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/typography/_copy.scss */
-big {
-	font-size: 125%;
-}
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-html {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-*,
-*:before,
-*:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	-webkit-box-sizing: inherit;
-	   -moz-box-sizing: inherit;
-	        box-sizing: inherit;
-}
-
-/* line 11, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-body {
-	background: #fff;
-	/* Fallback for when there is no custom background color defined. */
-}
-
-/* line 15, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-blockquote, q {
-	quotes: "" "";
-}
-
-/* line 18, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-}
-
-/* line 24, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
-
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_lists.scss */
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
-
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_lists.scss */
-ul {
-	list-style: disc;
-}
-
-/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_lists.scss */
-ol {
-	list-style: decimal;
-}
-
-/* line 13, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_lists.scss */
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_lists.scss */
-dt {
-	font-weight: bold;
-}
-
-/* line 23, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_lists.scss */
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-/* line 33, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_elements.scss */
-img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-}
-
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/elements/_tables.scss */
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_buttons.scss */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 11px;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-/* line 16, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_buttons.scss */
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
-
-/* line 21, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_buttons.scss */
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_fields.scss */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-
-/* line 21, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_fields.scss */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-	color: #111;
-}
-
-/* line 26, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_fields.scss */
-select {
-	border: 1px solid #ccc;
-}
-
-/* line 30, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_fields.scss */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
-	padding: 3px;
-}
-
-/* line 48, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/forms/_fields.scss */
-textarea {
-	padding-left: 3px;
-	width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_links.scss */
-a {
-	color: royalblue;
-}
-
-/* line 4, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_links.scss */
-a:visited {
-	color: purple;
-}
-
-/* line 8, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_links.scss */
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
-
-/* line 14, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_links.scss */
-a:focus {
-	outline: thin dotted;
-}
-
-/* line 18, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_links.scss */
-a:hover, a:active {
-	outline: 0;
-}
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
-
-/* line 7, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-/* line 13, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation ul ul {
-	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-/* line 21, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-/* line 27, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-/* line 33, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-/* line 46, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-/* line 52, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-/* line 61, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu. */
-/* line 74, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-/* line 92, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
-}
-
-/* line 97, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
-/* line 102, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
 }
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
-/* line 2, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_accessibility.scss */
+/* line 6, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_accessibility.scss */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -4620,7 +4216,7 @@ a:hover, a:active {
 	overflow: hidden;
 }
 
-/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_accessibility.scss */
+/* line 13, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_accessibility.scss */
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
@@ -4643,7 +4239,7 @@ a:hover, a:active {
 }
 
 /* Do not show the outline on the skip link target. */
-/* line 30, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_accessibility.scss */
+/* line 34, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_accessibility.scss */
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
@@ -4651,21 +4247,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_alignments.scss */
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_alignments.scss */
 .alignleft {
 	display: inline;
 	float: left;
 	margin-right: 1.5em;
 }
 
-/* line 7, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_alignments.scss */
+/* line 11, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_alignments.scss */
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
 
-/* line 13, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_alignments.scss */
+/* line 17, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/_alignments.scss */
 .aligncenter {
 	clear: both;
 	display: block;
@@ -4676,30 +4272,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-/* for use without bootstrap.
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-	@include clearfix;
-}
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-	@include clearfix-after;
-}*/
 /* line 14, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .clear:before, .clear:after,
 .entry-content:before,
@@ -4727,103 +4299,91 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Widgets
+# Elements
 --------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/secondary/_widgets.scss */
-.widget {
-	margin: 0 0 1.5em;
-	/* Make sure select elements fit in widgets. */
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/index.scss */
+html {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/secondary/_widgets.scss */
-.widget select {
+/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/index.scss */
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	   -moz-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/index.scss */
+blockquote, q {
+	quotes: "" "";
+}
+
+/* line 22, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/index.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+/*hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}*/
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_lists.scss */
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_lists.scss */
+ul {
+	list-style: disc;
+}
+
+/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_lists.scss */
+ol {
+	list-style: decimal;
+}
+
+/* line 13, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_lists.scss */
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_lists.scss */
+dt {
+	font-weight: bold;
+}
+
+/* line 23, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_lists.scss */
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* line 37, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/index.scss */
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
 	max-width: 100%;
+	/* Adhere to container width. */
 }
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_posts-and-pages.scss */
-.sticky {
-	display: block;
-}
-
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_posts-and-pages.scss */
-.hentry {
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/elements/_tables.scss */
+table {
 	margin: 0 0 1.5em;
-}
-
-/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_posts-and-pages.scss */
-.byline,
-.updated:not(.published) {
-	display: none;
-}
-
-/* line 14, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_posts-and-pages.scss */
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_posts-and-pages.scss */
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-/* line 25, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_posts-and-pages.scss */
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
-## Asides
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_asides.scss */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_comments.scss */
-.comment-content a {
-	word-wrap: break-word;
-}
-
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/site/primary/_comments.scss */
-.bypostauthor {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 2, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_infinite-scroll.scss */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	/* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-/* line 8, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_infinite-scroll.scss */
-.infinity-end.neverending .site-footer {
-	display: block;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_media.scss */
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/index.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -4834,7 +4394,7 @@ a:hover, a:active {
 }
 
 /* Make sure embeds and iframes fit their containers. */
-/* line 11, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_media.scss */
+/* line 15, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/index.scss */
 embed,
 iframe,
 object {
@@ -4844,25 +4404,25 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_captions.scss */
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_captions.scss */
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
 
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_captions.scss */
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_captions.scss */
+/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_captions.scss */
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
 
-/* line 14, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_captions.scss */
+/* line 14, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_captions.scss */
 .wp-caption-text {
 	text-align: center;
 }
@@ -4870,12 +4430,12 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery {
 	margin-bottom: 1.5em;
 }
 
-/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-item {
 	display: inline-block;
 	text-align: center;
@@ -4883,55 +4443,239 @@ object {
 	width: 100%;
 }
 
-/* line 11, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 11, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
 	max-width: 50%;
 }
 
-/* line 15, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 15, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
 	max-width: 33.33%;
 }
 
-/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
 	max-width: 25%;
 }
 
-/* line 23, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 23, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
 	max-width: 20%;
 }
 
-/* line 27, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 27, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
 	max-width: 16.66%;
 }
 
-/* line 31, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 31, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
 	max-width: 14.28%;
 }
 
-/* line 35, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 35, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
 	max-width: 12.5%;
 }
 
-/* line 39, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 39, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
 	max-width: 11.11%;
 }
 
-/* line 44, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/media/_galleries.scss */
+/* line 44, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/base/media/_galleries.scss */
 .gallery-caption {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {/* line 80, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+/* line 6, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_links.scss */
+a:visited {
+	color: purple;
+}
+
+/* line 10, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_links.scss */
+a:hover, a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+/* line 11, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+/* line 17, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation ul ul {
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+
+/* line 25, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+/* line 31, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+/* line 37, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+/* line 50, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+/* line 56, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+/* line 65, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+/* line 78, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+/* line 96, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+/* line 101, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+/* line 106, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_posts-and-pages.scss */
+.sticky {
+	display: block;
+}
+
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_posts-and-pages.scss */
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_posts-and-pages.scss */
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+/* line 14, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_posts-and-pages.scss */
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+/* line 19, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+/* line 25, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_posts-and-pages.scss */
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/content/_asides.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_comments.scss */
+.comment-content a {
+	word-wrap: break-word;
+}
+
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/_comments.scss */
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/* line 5, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/widgets/index.scss */
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+/* line 9, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/widgets/index.scss */
+.widget select {
+	max-width: 100%;
+}
+
+@media screen and (min-width: 37.5em) {/* line 84, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
 	.menu-toggle {
 		display: none;
-	}/* line 83, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/navigation/_menus.scss */
+	}/* line 87, C:/xampp/htdocs/v-hosts/cm/wp-content/themes/cmmt/sass/modules/navigation/_menus.scss */
 	.main-navigation ul {
 		display: block;
 	}
