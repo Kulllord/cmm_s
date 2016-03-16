@@ -5,13 +5,13 @@
 .alignleft {
 	display: inline;
 	float: left;
-	margin-right: 1.5em;
+	margin-right: ($line-height-computed / 2);
 }
 
 .alignright {
 	display: inline;
 	float: right;
-	margin-left: 1.5em;
+	margin-left: ($line-height-computed / 2);
 }
 
 .aligncenter {
