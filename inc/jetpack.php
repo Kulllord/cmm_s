@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package CodeMastermind_Theme
+ * @package cmm_s
  */
 
 /**
@@ -13,23 +13,23 @@
  * See: https://jetpack.me/support/infinite-scroll/
  * See: https://jetpack.me/support/responsive-videos/
  */
-function cmmt_jetpack_setup() {
+function cmm_s_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'cmmt_infinite_scroll_render',
+		'render'    => 'cmm_s_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 }
-add_action( 'after_setup_theme', 'cmmt_jetpack_setup' );
+add_action( 'after_setup_theme', 'cmm_s_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function cmmt_infinite_scroll_render() {
+function cmm_s_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) {

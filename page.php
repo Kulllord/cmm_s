@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package CodeMastermind_Theme
+ * @package cmm_s
  */
 
 get_header(); ?>

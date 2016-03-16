@@ -195,7 +195,7 @@ module.exports = function(grunt) {
 			options: {
 				enabled: true,
 				max_jshint_notifications: 5,
-				title: "cmmt",
+				title: 'cmm_s',
 				success: false,
 				duration: 2
 			}

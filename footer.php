@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package CodeMastermind_Theme
+ * @package cmm_s
  */
 
 ?>
@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cmmt' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'cmmt' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cmm_s' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'cmm_s' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'cmmt' ), 'cmmt', '<a href="http://codemastermind.com" rel="designer">Christopher Parker</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'cmm_s' ), 'cmm_s', '<a href="http://codemastermind.com" rel="designer">Christopher Parker</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

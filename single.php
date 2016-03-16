@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package CodeMastermind_Theme
+ * @package cmm_s
  */
 
 get_header(); ?>
