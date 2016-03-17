@@ -1,7 +1,7 @@
 {
-	"name": "cmm_t",
-	"description": "Theme boiler plate from with bootstrap",
-	"keywords": ["wordpress", "theme", "bootstrap", "sass"],
+	"name": "cmm_s",
+	"description": "A WordPress boilerplate theme with Bootstrap.",
+	"keywords": ["wordpress", "theme", "bootstrap", "sass", "boilerplate"],
 	"author": "Christopher Parker",
 	"version": "0.1.0",
 	"repository": {
