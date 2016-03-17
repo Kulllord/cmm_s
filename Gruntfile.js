@@ -205,7 +205,7 @@ module.exports = function(grunt) {
 	// Register Grunt tasks.
 	grunt.registerTask('styles', ['sass', 'postcss', 'cssnano']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
-	grunt.registerTask('default', ['styles']);
+	grunt.registerTask('default', ['styles', 'javascript']);
 
 	// grunt-notify shows native notifications on errors.
 	grunt.loadNpmTasks('grunt-notify');
